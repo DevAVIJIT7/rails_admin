@@ -13,9 +13,9 @@ module RailsAdmin
   class ApplicationController < Config.parent_controller.constantize
     protect_from_forgery with: :exception
 
-    before_action :_authenticate!
-    before_action :_authorize!
-    before_action :_audit!
+    #before_action :_authenticate!
+    #before_action :_authorize!
+    #before_action :_audit!
 
     helper_method :_current_user, :_get_plugin_name
 
